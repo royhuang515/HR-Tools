@@ -2,7 +2,7 @@
 // 新增工具：建立 src/tools/... 資料夾，再於對應類別的 tools 加一筆。
 export const categories = [
   {
-    id: 'hr', code: 'A', title: '人事作業', icon: '🧑‍💼',
+    id: 'hr', code: 'A', title: '人事作業',
     tools: [
       { id: 'identity', code: 'A1', title: '到職身分判定', desc: '判定新進、在職或回任員工',
         component: () => import('./tools/hr/identity/Index.vue') },
@@ -10,8 +10,8 @@ export const categories = [
         component: () => import('./tools/hr/seniority/Index.vue') }
     ]
   },
-  { id: 'insurance', code: 'B', title: '保險及考勤', icon: '🛡️', tools: [] },
-  { id: 'payroll', code: 'C', title: '薪資作業', icon: '💰', tools: [] }
+  { id: 'insurance', code: 'B', title: '保險及考勤', tools: [] },
+  { id: 'payroll', code: 'C', title: '薪資作業', tools: [] }
 ]
 
 export const findCategory = (id) => categories.find((c) => c.id === id)

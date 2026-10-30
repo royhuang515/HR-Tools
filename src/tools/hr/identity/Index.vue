@@ -50,7 +50,7 @@ function reset() {
       <div class="result-box"><h4>應備資料</h4><div>{{ result.docs }}</div></div>
       <div class="result-box"><h4>特休年資計算</h4><div>{{ result.seniority }}</div></div>
       <div class="btn-row">
-        <button class="btn btn-ghost" @click="back">‹ 返回上一頁</button>
+        <button class="btn btn-ghost" @click="back">< 返回上一頁</button>
         <button class="btn btn-primary" @click="reset">重新判定身份</button>
       </div>
     </template>
@@ -71,12 +71,12 @@ function reset() {
       </div>
       <div v-else class="opts">
         <button v-for="o in step.options" :key="o.label" class="opt" @click="choose(o)">
-          <span>{{ o.label }}</span><span>➔</span>
+          {{ o.label }}
         </button>
       </div>
 
       <div class="btn-row" v-if="history.length">
-        <button class="btn btn-ghost" @click="back">‹ 返回上一頁</button>
+        <button class="btn btn-ghost" @click="back">< 返回上一頁</button>
       </div>
     </template>
   </div>

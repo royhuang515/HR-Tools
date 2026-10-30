@@ -6,7 +6,7 @@
 
 新增工具：建立 `src/tools/<類別>/<工具>/Index.vue`，再到 `src/registry.js` 加一筆。
 
-測試規則層（不需安裝套件，需 Node 20+）：
+測試規則層（不需安裝套件，需 Node 22+）：
 
     npm test
 
